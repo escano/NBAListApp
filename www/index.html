@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>NBA Player's Info</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+  </head>
+  <body>
+
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <p>List of your Records</p>
+      </div>
+    </div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover">
+      <div class="content-block">
+        <p>Left panel content goes here</p>
+      </div>
+    </div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+         
+        
+            <!-- We have home navbar without left link-->
+            <div class="center sliding"> <h2> <font color="">My NBA Player's Info </font> </h2></div>
+            <div class="right">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+              
+            <br>  
+              <div class="list-block">
+              <img src="img/ball.png">
+                
+  <form role="form" class="form-horizontal" action="insert.php" method="post">
+      <ul><li> <div class="form-group">
+  <table>
+
+  <label for="Name" class="col-sm-3 control-label"><font color=black><b>Name:</b></font></label>
+
+  <div class="col-sm-9">
+  <label><input type="text" name="Name" class="form-control" id="field_input" placeholder="Enter Player's Name" required="text"></label>
+  </div>
+  </div> 
+               <div class="form-group">
+  <label for="Age" class="col-sm-3 control-label"><font color=black><b>Age:</b></font></label>
+  <div class="col-sm-9">
+  <input type="number" name="Age" class="form-control" placeholder="Enter Player's Age" required="number">
+  </div>
+  </div> 
+            <div class="form-group">
+  <label for="Height" class="col-sm-3 control-label"><font color=black><b>Height(ft.):</b></font></label>
+  <div class="col-sm-9">
+  <input type="text" name="Height" class="form-control" placeholder="Enter Player's Height" required="text">
+  </div>
+  </div> 
+                <div class="form-group">
+  <label for="Country" class="col-sm-3 control-label"><font color=black><b>Country:</b></font></label>
+  <div class="col-sm-9">
+  <input type="text" name="Country" class="form-control" placeholder="Enter Player's Country" required="text">
+  </div>
+  </div> 
+              <div class="form-group">
+  <label for="Position" class="col-sm-3 control-label"><font color=black><b>Position:</b></font></label>
+  <div class="col-sm-9">
+  <select class="form-control" name="Position">
+  <option>PG</option>
+  <option>SG</option>
+  <option>SF</option>
+  <option>PF</option>
+  <option>Center</option>
+  </select>
+  </div>
+  </div>
+             <div class="form-group">
+  <label for="Team" class="col-sm-3 control-label"><font color=black><b>Team:</b></font></label>
+  <div class="col-sm-9">
+  <input type="text" name="Team" class="form-control" placeholder="Enter Player's Team" required="text">
+  </div>
+  </div>
+        <div class="form-group">
+  <label for="Type" class="col-sm-3 control-label"><font color=black><b>Playing Type:</b></font></label>
+  <div class="col-sm-9">
+  <input type="text" name="Type" class="form-control" placeholder="Enter Player's Playing Type" required="text">
+  </div>
+  </div>  
+</table>
+  <br>
+  <center><button><a href="#" class="button button-fill color-blue" id="button_input"> &nbsp;&nbsp;&nbsp;Add Record &nbsp;&nbsp;&nbsp;</button></a> 
+  <button><a class="button button-fill color-red" class="Link"> &nbsp;&nbsp;&nbsp;&nbsp;Delete Record &nbsp;&nbsp;&nbsp;</button></a></center>
+
+
+                </ul>
+                </li>
+              </div>
+             
+            
+        <!-- Bottom Toolbar-->
+        
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>
